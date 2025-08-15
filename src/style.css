@@ -1,0 +1,79 @@
+:root{
+    --silver: #e2edf3;
+    --white: white;
+    --green: #adff2f;
+    --blue: #0b447c;
+    --charcoal: #333333;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Syne+Mono&display=swap');
+
+/*font-family: 'Share Tech Mono', monospace;  OR   font-family: 'Syne Mono', monospace; */
+
+
+*{
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+}
+
+body{ 
+    display: grid; 
+    grid-template-rows: 150px 1fr; 
+    height: 100vh; 
+} 
+
+header{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black; 
+    box-sizing: border-box; 
+    grid-row: 1; 
+    height: 150px;
+    font-family: 'Syne Mono', monospace;
+    font-size: 5em;
+    background: linear-gradient(var(--charcoal), var(--silver));
+}
+
+main{ 
+    border: 1px solid blue; 
+    box-sizing: border-box; 
+    grid-row: 2; 
+    display: grid; 
+    height: 1fr;
+    grid-template-columns: 20% 80%; 
+    overflow-y: auto;
+ } 
+    
+aside{ 
+    border: 1px solid orange; 
+    box-sizing: border-box; grid-column: 1;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+} 
+        
+
+section{
+    height:100%;
+    overflow-y: auto;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+}
+
+
+
+dialog {
+  border: none !important;
+  border-radius: 13px;
+  box-shadow: 0 0 #0000, 0 0 #0000, 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  padding: 1.6rem;
+  max-width: 400px;
+  min-height: 400px;
+  height: 400px;
+  align-self: center;
+  justify-self: center;
+}

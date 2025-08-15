@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todo</title>
+<script defer src="main.js"></script></head>
+<body>
+
+    <header> Todo List
+
+    </header>
+    <main>
+
+        <aside>
+
+            <dialog id = "taskDialog">
+                <form id = "taskForm" method = "dialog">
+                    <label for = "title">Task: </label>
+                    <input type = "text" id = "taskTitle" name = "title">
+                    <label for = "date">Due Date: </label>
+                    <input type = "date" id = "taskDate" name = "date">
+                    <label for = "description">Description: </label>
+                    <textarea id = "taskDescription" name = "description" rows = "10" cols = "30"></textarea>
+                    <label for = "priority">Priority: </label>
+                    <select name="priority" id="taskPriority">
+                        <option value="low">Low</option>
+                        <option value="medium">Medium</option>
+                        <option value="high">High</option>
+                    </select>
+
+                    <button type = "submit" id = "submit-taskDialog">Create</button>
+                    <button type = "button" id = "cancel-taskDialog">Cancel</button>
+                </form>
+            </dialog>
+            <button id = "show-taskDialog">Create Task</button>
+
+        </aside>
+        
+        <section>
+
+        </section>
+    
+
+    </main>
+</body>
+</html>
